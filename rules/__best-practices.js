@@ -1,4 +1,3 @@
-// TODO:
 module.exports = {
   rules: {
     // enforce getter and setter pairs in objects and classes
@@ -28,11 +27,10 @@ module.exports = {
     // require `default` cases in `switch` statements
     // https://eslint.org/docs/rules/default-case
     'default-case': ['error', {commentPattern: '^no default'}],
-    /* // TODO:
     // enforce default clauses in switch statements to be last
     // https://eslint.org/docs/rules/default-case-last
-    // this rule is still in alpha
-    'default-case-last': 'error', */
+    // TODO: this rule is still in alpha
+    /* 'default-case-last': 'error', */
     // enforce default parameters to be last
     // https://eslint.org/docs/rules/default-param-last
     'default-param-last': 'error',
