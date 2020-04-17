@@ -13,12 +13,4 @@ module.exports = {
     './rules/__es6.js',
     './rules/__imports.js',
   ],
-  overrides: [
-    {
-      files: ['.*.js', '__*.js'],
-      rules: {
-        indent: ['error', 2],
-      },
-    },
-  ],
 };

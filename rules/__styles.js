@@ -15,7 +15,7 @@ module.exports = {
     'block-spacing': ['error', 'always'],
     // enforce consistent brace style for blocks
     // https://eslint.org/docs/rules/brace-style
-    'brace-style': ['error', 'stroustrup', {allowSingleLine: true}],
+    'brace-style': ['error', '1tbs', {allowSingleLine: true}],
     // enforce camelcase naming convention
     // https://eslint.org/docs/rules/camelcase
     camelcase: 'off',
@@ -118,11 +118,11 @@ module.exports = {
     // enforce a maximum line length
     // https://eslint.org/docs/rules/max-len
     'max-len': [
-      'warn',
+      'error',
       {
         code: 80,
         ignoreUrls: true,
-        ignoreComments: false,
+        ignoreComments: true,
         ignoreRegExpLiterals: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,

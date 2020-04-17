@@ -9,7 +9,7 @@ module.exports = {
   useTabs: false,
   overrides: [
     {
-      files: ['*.json', '*.yaml', '*.yml', '.*.js', '__*.js'],
+      files: ['*.json', '*.yaml', '*.yml', 'index.js', '.*.js', '__*.js'],
       options: {
         tabWidth: 2,
       },

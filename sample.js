@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-console.warn(fs);
+console.log(fs);
 
 const test = function test(x) {
     if(x > 1) return 'Yes!';
@@ -17,32 +17,36 @@ function test3(x, y) {
     return 'Nope!';
 }
 
-function someFunction() {
-    const bool = new Boolean();
-    console.warn('bool: ', bool);
-    return 1;
+function someFunction(x, y) {
+    return x + y;
 }
 
 const someObject = {
     a: [1, 2],
-    b: { test: 'test' },
+    b: {test: 'test'},
 };
 
 const NODE_ENV = 'development';
 
-// a stupid switch statement
-// that's right
 switch(NODE_ENV) {
     case 'development':
-        console.warn('NODE_ENV: ', NODE_ENV);
-        console.warn('typeof: ', typeof NODE_ENV);
+        console.log('NODE_ENV: ', NODE_ENV);
+        console.log('typeof: ', typeof NODE_ENV);
         break;
     default:
-        console.warn('NODE_ENV: ', 'not development');
+        console.log('NODE_ENV: ', 'not development');
 }
 
-console.warn('someObject: ', someObject);
-console.warn('someFunction: ', someFunction());
-console.warn('test: ', test(1));
-console.warn('test2: ', test2(2));
-console.warn('test3: ', test3(3, 2));
+console.log('someObject: ', someObject);
+console.log('someFunction: ', someFunction());
+console.log('test: ', test(1));
+console.log('test2: ', test2(2));
+console.log('test3: ', test3(3, 2));
+
+const x = true;
+
+if(x) {
+    console.log(x);
+} else {
+    console.log(false);
+}

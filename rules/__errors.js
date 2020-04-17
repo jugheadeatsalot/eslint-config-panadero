@@ -21,7 +21,7 @@ module.exports = {
     'no-cond-assign': 'off',
     // disallow the use of `console`
     // https://eslint.org/docs/rules/no-console
-    'no-console': ['error', {allow: ['warn', 'error']}],
+    'no-console': 'warn',
     // disallow constant expressions in conditions
     // https://eslint.org/docs/rules/no-constant-condition
     'no-constant-condition': 'off',
