@@ -14,6 +14,9 @@ module.exports = {
     './rules/__styles.js',
     './rules/__es6.js',
     './rules/__imports.js',
+    './rules/__jsx-a11y.js',
+    './rules/__react.js',
+    './rules/__react-hooks.js',
   ],
   overrides: [
     {
