@@ -1,30 +1,27 @@
-// TODO:
 module.exports = {
-  env: {
-    node: true,
-  },
+  env: {node: true},
   rules: {
     // require `return` statements after callbacks
     // https://eslint.org/docs/rules/callback-return
-    'callback-return': 'off',
+    'callback-return': 'error',
     // require `require()` calls to be placed at top-level module scope
     // https://eslint.org/docs/rules/global-require
-    'global-require': 'off',
+    'global-require': 'error',
     // require error handling in callbacks
     // https://eslint.org/docs/rules/handle-callback-err
-    'handle-callback-err': 'off',
+    'handle-callback-err': ['error', '^.*(e|E)rr'],
     // disallow use of the `Buffer()` constructor
     // https://eslint.org/docs/rules/no-buffer-constructor
-    'no-buffer-constructor': 'off',
+    'no-buffer-constructor': 'error',
     // disallow `require` calls to be mixed with regular variable declarations
     // https://eslint.org/docs/rules/no-mixed-requires
-    'no-mixed-requires': 'off',
+    'no-mixed-requires': 'error',
     // disallow `new` operators with calls to `require`
     // https://eslint.org/docs/rules/no-new-require
-    'no-new-require': 'off',
+    'no-new-require': 'error',
     // disallow string concatenation with `__dirname` and `__filename`
     // https://eslint.org/docs/rules/no-path-concat
-    'no-path-concat': 'off',
+    'no-path-concat': 'error',
     // disallow the use of `process.env`
     // https://eslint.org/docs/rules/no-process-env
     'no-process-env': 'off',

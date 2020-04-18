@@ -1,24 +1,7 @@
-// TODO:
 module.exports = {
-  env: {
-    es6: true,
-  },
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-  },
+  env: {es6: true},
+  parserOptions: {sourceType: 'module'},
   plugins: ['import'],
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.mjs', '.js', '.json'],
-      },
-    },
-    'import/extensions': ['.js', '.mjs', '.jsx'],
-    'import/ignore': [
-      'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$',
-    ],
-  },
-  extends: [],
+  settings: {'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$']},
+  extends: ['plugin:import/errors', 'plugin:import/warnings', 'plugin:import/react', 'plugin:import/typescript'],
 };
