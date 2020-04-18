@@ -2,7 +2,10 @@ module.exports = {
   rules: {
     // enforce getter and setter pairs in objects and classes
     // https://eslint.org/docs/rules/accessor-pairs
-    'accessor-pairs': ['error', {setWithoutGet: true, enforceForClassMembers: true}],
+    'accessor-pairs': [
+      'error',
+      {setWithoutGet: true, enforceForClassMembers: true},
+    ],
     // enforce `return` statements in callbacks of array methods
     // https://eslint.org/docs/rules/array-callback-return
     'array-callback-return': ['error', {allowImplicit: false}],
@@ -147,7 +150,10 @@ module.exports = {
     'no-octal-escape': 'error',
     // disallow reassigning `function` parameters
     // https://eslint.org/docs/rules/no-param-reassign
-    'no-param-reassign': ['error', {props: true, ignorePropertyModificationsForRegex: ['^__']}],
+    'no-param-reassign': [
+      'error',
+      {props: true, ignorePropertyModificationsForRegex: ['^__']},
+    ],
     // disallow the use of the `__proto__` property
     // https://eslint.org/docs/rules/no-proto
     'no-proto': 'error',
