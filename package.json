@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-panadero",
-  "version": "0.0.1",
+  "version": "0.0.1-202005081425",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
