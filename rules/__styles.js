@@ -17,7 +17,7 @@ module.exports = {
     'brace-style': ['error', '1tbs', {allowSingleLine: true}],
     // enforce camelcase naming convention
     // https://eslint.org/docs/rules/camelcase
-    camelcase: 'error',
+    camelcase: 'off',
     // enforce or disallow capitalization of the first letter of a comment
     // https://eslint.org/docs/rules/capitalized-comments
     'capitalized-comments': 'off',
@@ -68,7 +68,7 @@ module.exports = {
     'id-match': 'off',
     // enforce the location of arrow function bodies
     // https://eslint.org/docs/rules/implicit-arrow-linebreak
-    'implicit-arrow-linebreak': ['error', 'beside'],
+    'implicit-arrow-linebreak': 'off',
     // enforce consistent indentation
     // https://eslint.org/docs/rules/indent
     indent: ['error', 4, {SwitchCase: 1}],
@@ -224,7 +224,7 @@ module.exports = {
     'nonblock-statement-body-position': ['error', 'beside'],
     // enforce consistent line breaks inside braces
     // https://eslint.org/docs/rules/object-curly-newline
-    'object-curly-newline': ['error', {multiline: true}],
+    'object-curly-newline': ['error', {multiline: true, consistent: true}],
     // enforce consistent spacing inside braces
     // https://eslint.org/docs/rules/object-curly-spacing
     'object-curly-spacing': ['error', 'never'],
@@ -242,7 +242,7 @@ module.exports = {
     'operator-assignment': ['error', 'always'],
     // enforce consistent linebreak style for operators
     // https://eslint.org/docs/rules/operator-linebreak
-    'operator-linebreak': ['error', 'before', {overrides: {'=': 'none'}}],
+    'operator-linebreak': ['error', 'before'],
     // require or disallow padding within blocks
     // https://eslint.org/docs/rules/padded-blocks
     'padded-blocks': ['error', 'never'],
